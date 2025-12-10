@@ -1,0 +1,311 @@
+/*
+ * Archivo: main.css
+ * Descripción: Estilos para el portafolio web profesional de Daniel González
+ */
+
+/* ==================== 1. Variables y Reset Básico ==================== */
+
+:root {
+    --primary-color: #007bff; /* Azul profesional */
+    --secondary-color: #6c757d; /* Gris para texto secundario */
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --background-gradient: linear-gradient(135deg, #f0f2f5, #ffffff);
+    --card-background: #ffffff;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background-gradient);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-color);
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* ==================== 2. Estilos del Encabezado (Header) ==================== */
+
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.main-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.main-header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* ==================== 3. Estilos de Contenido Principal (Main) ==================== */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 40px 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--light-color);
+    padding-bottom: 5px;
+}
+
+/* ==================== 4. Sección de Perfil ==================== */
+
+.profile-section {
+    background-color: var(--card-background);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    margin-top: -50px; /* Eleva la tarjeta sobre el header */
+    position: relative;
+    z-index: 10;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info h2 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+
+.profile-info p {
+    font-size: 1.05em;
+}
+
+.profile-info strong {
+    color: var(--primary-color);
+}
+
+
+/* ==================== 5. Sección de Habilidades (Skills) ==================== */
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.skill-tag:hover {
+    background-color: var(--primary-color);
+}
+
+/* ==================== 6. Sección de Proyectos ==================== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid var(--primary-color);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* ==================== 7. Barra Lateral/Enlaces (Aside) ==================== */
+
+.links-aside {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    margin: 40px 0;
+    border: 1px solid #dee2e6;
+}
+
+.links-aside h2 {
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.links-aside ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.links-aside li {
+    flex: 1 1 300px;
+    min-width: 250px;
+}
+
+.links-aside a {
+    display: block;
+    padding: 10px 15px;
+    background-color: var(--card-background);
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.links-aside a:hover {
+    background-color: #e9ecef;
+    color: var(--primary-color);
+    border-left-color: var(--primary-color);
+}
+
+/* ==================== 8. Detalles Técnicos ==================== */
+
+.technical-info {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.tech-details {
+    background-color: var(--card-background);
+    border: 1px solid #ced4da;
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.tech-details summary {
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #f1f3f5;
+    color: var(--dark-color);
+    outline: none;
+}
+
+.tech-details summary:hover {
+    background-color: #e9ecef;
+}
+
+.tech-details p {
+    padding: 15px;
+    border-top: 1px solid #e9ecef;
+    font-size: 0.95em;
+    color: var(--secondary-color);
+}
+
+/* ==================== 9. Pie de Página (Footer) ==================== */
+
+.main-footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-footer p {
+    margin: 5px 0;
+}
+
+/* ==================== 10. Media Queries (Responsividad) ==================== */
+
+@media (max-width: 768px) {
+    .main-header h1 {
+        font-size: 2em;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin-bottom: 15px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+}
