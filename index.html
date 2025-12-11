@@ -5,126 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Daniel González">
     <meta name="description" content="Portafolio web personal de Daniel González. Explora mis proyectos en desarrollo web, programación y sistemas.">
-    <meta name="keywords" content="Portafolio, Daniel González, Web Developer, HTML, CSS, JavaScript, SQL, PHP, jQuery, DOM, Bootstrap, Python">
+    <meta name="keywords" content="Portafolio, Daniel González, Web Developer, HTML, CSS, JavaScript, SQL, PHP, jQuery, DOM, Bootstrap, Python, Sistemas">
 
     <meta property="og:title" content="Portafolio Profesional de Daniel González">
     <meta property="og:description" content="Explora mis trabajos y habilidades en desarrollo web y tecnología.">
     <meta property="og:image" content="source/logo.png">
-    <meta property="og:url" content="https://tu-url-profesional.com"> <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-url-profesional.com">
+    <meta property="og:type" content="website">
     <meta property="og:site_name" content="Portafolio de Daniel">
 
     <title>Daniel González | Portafolio Web Profesional</title>
-    
+
     <link rel="stylesheet" href="css/main.css">
-    
+
     <link rel="icon" type="image/x-icon" href="source/favicon.ico">
-</head>
+
+    </head>
 
 <body>
 
-    <header class="main-header">
-        <h1>Daniel González  💻</h1>
-        <p>Bienvenido a mi portafolio personal.</p>
+    <header class="main-header" role="banner">
+        <div class="header-content">
+            <h1>Daniel González <span aria-hidden="true">💻</span></h1>
+            <p>Bienvenido a mi portafolio personal de desarrollo.</p>
+        </div>
     </header>
 
-    <main>
-        
-        <section class="profile-section">
+    <main role="main">
+
+        <section id="profile" class="profile-section" aria-labelledby="profile-heading">
+            <h2 id="profile-heading" class="sr-only">Perfil Profesional</h2> 
             <div class="profile-card">
-                <img src="source/images.jpeg" alt="Imagen de Daniel" class="profile-image">
+                <img src="source/images.jpeg" alt="Retrato de Daniel González, Desarrollador Web" class="profile-image">
                 <div class="profile-info">
-                    <h2>Bienvenido/a</h2>
+                    <h3>¡Hola! Soy Daniel.</h3>
                     <p>
-                        Esta es mi página web personal. Aquí encontrarás una colección de mis proyectos, trabajos y enlaces de interés relacionados con el desarrollo web y la tecnología. Mi enfoque principal es la **creación de soluciones funcionales y atractivas**.
+                        Esta es mi página web personal. Aquí encontrarás una colección de mis proyectos, trabajos y enlaces de interés relacionados con el desarrollo web y la tecnología. Mi enfoque principal es la **creación de soluciones funcionales y atractivas**, con pasión por el aprendizaje constante.
                     </p>
                 </div>
             </div>
         </section>
 
-        <section class="skills-section">
-            <h2>🛠️ Habilidades Clave</h2>
+        <section id="skills" class="skills-section" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">🛠️ Habilidades Clave</h2>
             <div class="skills-container">
-                <span class="skill-tag">HTML5</span>
-                <span class="skill-tag">CSS3</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL/PHP</span>
-                <span class="skill-tag">Bootstrap</span>
-                <span class="skill-tag">Sistemas Operativos</span>
+                <span class="skill-tag" aria-label="Habilidad: HTML5">HTML5</span>
+                <span class="skill-tag" aria-label="Habilidad: CSS3">CSS3</span>
+                <span class="skill-tag" aria-label="Habilidad: JavaScript">JavaScript</span>
+                <span class="skill-tag" aria-label="Habilidad: Python">Python</span>
+                <span class="skill-tag" aria-label="Habilidad: SQL y PHP">SQL/PHP</span>
+                <span class="skill-tag" aria-label="Habilidad: Bootstrap">Bootstrap</span>
+                <span class="skill-tag" aria-label="Habilidad: Sistemas Operativos">Sistemas Operativos</span>
             </div>
         </section>
 
-        <section class="projects-section">
-            <h2>📂 Proyectos Destacados</h2>
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">📂 Proyectos Destacados</h2>
 
             <div class="projects-grid">
                 <article class="project-card">
                     <h3>Mi Trabajo de Círculos</h3>
-                    <p>Exploración de CSS y diseño con formas geométricas.</p>
-                    <a href="htmls/div2.html" class="project-link">Ver Proyecto</a>
+                    <p>Exploración avanzada de CSS y diseño con formas geométricas para practicar la propiedad `border-radius`.</p>
+                    <a href="htmls/div2.html" class="project-link" aria-label="Ver Proyecto: Mi Trabajo de Círculos">Ver Proyecto »</a>
                 </article>
 
                 <article class="project-card">
-                    <h3>Galería Web</h3>
-                    <p>Diseño y maquetación de una galería de imágenes o recursos.</p>
-                    <a href="htmls/galery.html" class="project-link">Ver Proyecto</a>
+                    <h3>Galería Web Responsiva</h3>
+                    <p>Diseño y maquetación de una galería de imágenes utilizando Flexbox/Grid y técnicas de responsividad.</p>
+                    <a href="htmls/galery.html" class="project-link" aria-label="Ver Proyecto: Galería Web">Ver Proyecto »</a>
                 </article>
 
                 <article class="project-card">
                     <h3>Mi Primera Web</h3>
-                    <p>Primera web que hicimos en clase .</p>
-                    <a href="htmls/mi-primera-web.html" class="project-link">Ver Proyecto</a>
+                    <p>Estructura inicial de una página web con HTML básico y CSS, un hito de aprendizaje en clase.</p>
+                    <a href="htmls/mi-primera-web.html" class="project-link" aria-label="Ver Proyecto: Mi Primera Web">Ver Proyecto »</a>
                 </article>
-                
+
                 <article class="project-card">
                     <h3>Configuración DHCP</h3>
-                    <p>Documentación técnica sobre la implementación de servicios de red.</p>
-                    <a href="htmls/dhcp.html" class="project-link">Ver Proyecto</a>
+                    <p>Documentación técnica sobre la implementación, configuración y gestión de servicios de red (DHCP).</p>
+                    <a href="htmls/dhcp.html" class="project-link" aria-label="Ver Proyecto: Configuración DHCP">Ver Proyecto »</a>
                 </article>
 
                 <article class="project-card">
-                    <h3>BOLITAS </h3>
-                    <p>Ejercicio de bolitas.</p>
-                    <a href="htmls/div8mal.html" class="project-link">Ver Proyecto</a>
+                    <h3>BOLITAS (Ejercicio DOM/Animación)</h3>
+                    <p>Práctica de manipulación del DOM y/o animaciones CSS con elementos simples.</p>
+                    <a href="htmls/div8mal.html" class="project-link" aria-label="Ver Proyecto: Bolitas">Ver Proyecto »</a>
                 </article>
 
                 <article class="project-card">
-                    <h3>Integración de Mapas</h3>
-                    <p>Uso de APIs para visualizar mapas geográficos en la web.</p>
-                    <a href="htmls/mapa.html" class="project-link">Ver Proyecto</a>
+                    <h3>Integración de Mapas API</h3>
+                    <p>Uso de APIs externas para visualizar mapas geográficos interactivos en la web.</p>
+                    <a href="htmls/mapa.html" class="project-link" aria-label="Ver Proyecto: Integración de Mapas">Ver Proyecto »</a>
                 </article>
             </div>
         </section>
 
-        <aside class="links-aside">
-            <h2>🔗 Recursos Útiles</h2>
-            <ul>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Aprende HTML, CSS y más</a></li>
-                <li><a href="https://www.xataka.com" target="_blank">Xataka - Noticias de Tecnología</a></li>
-                <li><a href="https://translate.google.com/?hl=es" target="_blank">Traductor de Google</a></li>
-                <li><a href="https://www.nationalgeographic.com/es" target="_blank">National Geographic</a></li>
-                <li><a href="https://www.elpais.com" target="_blank">El País - Noticias</a></li>
-                <li><a href="https://www.google.es/maps" target="_blank">Google Maps</a></li>
-                <li><a href="https://www.youtube.com/@SpaceX" target="_blank">SpaceX - Canal Oficial</a></li>
-            </ul>
-        </aside>
+        <div class="info-container">
 
-        <section class="technical-info">
-            <h2>📚 Información Técnica</h2>
-            <details class="tech-details">
-                <summary>SEO (Search Engine Optimization)</summary>
-                <p>Es el conjunto de técnicas para mejorar la visibilidad de un sitio web en motores de búsqueda como Google, fundamental para el alcance profesional.</p>
-            </details>
+            <section class="technical-info" aria-labelledby="tech-heading">
+                <h2 id="tech-heading">📚 Información Técnica</h2>
+                <div class="tech-details-grid">
+                    <details class="tech-details">
+                        <summary>SEO (Search Engine Optimization)</summary>
+                        <p>Es el conjunto de técnicas para mejorar la visibilidad de un sitio web en motores de búsqueda como Google. Se aplica optimizando metas, contenido y estructura.</p>
+                    </details>
 
-            <details class="tech-details">
-                <summary>OPEN GRAPH Protocol</summary>
-                <p>Protocolo de marcado utilizado para controlar cómo se muestra el contenido web cuando se comparte en redes sociales (Facebook, LinkedIn, etc.), optimizando la presentación.</p>
-            </details>
-        </section>
+                    <details class="tech-details">
+                        <summary>OPEN GRAPH Protocol</summary>
+                        <p>Protocolo de marcado utilizado para controlar cómo se muestra el contenido web cuando se comparte en redes sociales (Facebook, LinkedIn, etc.), optimizando la presentación.</p>
+                    </details>
+                </div>
+            </section>
+
+            <aside class="links-aside" aria-labelledby="resources-heading">
+                <h2 id="resources-heading">🔗 Recursos Útiles</h2>
+                <ul class="resource-list">
+                    <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Aprende HTML, CSS y más</a></li>
+                    <li><a href="https://www.xataka.com" target="_blank">Xataka - Noticias de Tecnología</a></li>
+                    <li><a href="https://translate.google.com/?hl=es" target="_blank">Traductor de Google</a></li>
+                    <li><a href="https://www.nationalgeographic.com/es" target="_blank">National Geographic</a></li>
+                    <li><a href="https://www.elpais.com" target="_blank">El País - Noticias</a></li>
+                    <li><a href="https://www.google.es/maps" target="_blank">Google Maps</a></li>
+                    <li><a href="https://www.youtube.com/@SpaceX" target="_blank">SpaceX - Canal Oficial</a></li>
+                </ul>
+            </aside>
+        </div>
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <p>&copy; 2025 Daniel González | Portafolio Personal.</p>
         <p>Desarrollado con HTML5 y CSS3.</p>
     </footer>
